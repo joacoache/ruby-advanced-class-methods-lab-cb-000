@@ -44,9 +44,9 @@ class Song
   def self.new_from_filename(name)
     song = self.new
     @@all << song
-    a = name.split(" - ", ".")
+    a = name.split(" - ")
     song.name = a[0].to_s
-    song.artist_name[1].to_s
+    song.artist_name = a[1].to_s
     song
   end
 end
