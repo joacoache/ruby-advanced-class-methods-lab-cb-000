@@ -48,4 +48,5 @@ class Song
     song.name = a[0]
     song.artist_name[1]
     song
+  end
 end
