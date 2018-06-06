@@ -30,6 +30,7 @@ class Song
   end
 
   def self.find_by_name(name)
+      a = id
     @@all.each do |s|
       if s.name == name
         a = s
