@@ -45,8 +45,8 @@ class Song
     song = self.new
     @@all << song
     a = name.split(" - ", ".")
-    song.name = a[0]
-    song.artist_name[1]
+    song.name = a[0].to_s
+    song.artist_name[1].to_s
     song
   end
 end
