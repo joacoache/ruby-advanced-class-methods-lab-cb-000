@@ -35,10 +35,7 @@ class Song
 
   def self.find_or_create_by_name(name)
     unless class.find_by_name
-      song = self.new
-      @@all << song
-      song.name = name
-      song
+      class.create_by_name
     end
   end
 
