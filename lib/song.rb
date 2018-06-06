@@ -46,7 +46,7 @@ class Song
     @@all << song
     a = name.split(" - ")
     song.artist_name = a[0]
-    b = a.join
+    b = a[1]
     c = b.split(".")
     song.name = c[0]
     song
