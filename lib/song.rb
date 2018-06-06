@@ -44,9 +44,11 @@ class Song
   def self.new_from_filename(name)
     song = self.new
     @@all << song
-    a = name.split(" - ", ".")
-    song.name = a[1].to_s
-    song.artist_name = a[0].to_s
+    a = name.split(" - ")
+    song.artist_name = a[0]
+    b = a.join
+    c = b.split(".")
+    song.name = c[0]
     song
   end
 end
